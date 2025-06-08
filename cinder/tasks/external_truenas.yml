@@ -1,0 +1,9 @@
+---
+- name: Copying over TrueNAS files
+  copy:
+    src: "{{ node_custom_config }}/cinder/ixsystems"
+    dest: "{{ node_config_directory }}/cinder-volume/"
+    mode: "0660"
+  become: true
+  notify:
+    - Restart cinder-volume container
