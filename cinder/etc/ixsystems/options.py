@@ -78,5 +78,5 @@ ixsystems_provisioning_opts = [
                default=1,
                help='Storage controller iSCSI portal ID'),
     cfg.StrOpt('ixsystems_initiator_id',
-               default=1,
+               default=4,
                help='Storage controller iSCSI Initiator ID'), ]
