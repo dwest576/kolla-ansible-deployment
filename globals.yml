@@ -44,6 +44,7 @@ enable_cinder_backend_pure_nvme_tcp: "no"
 enable_cinder_backend_lightbits: "no"
 cinder_backend_truenas: "yes"
 skip_cinder_backend_check: True
+cinder_cluster_skip_precheck: True
 
 enable_cloudkitty: "no"
 enable_collectd: "no"
