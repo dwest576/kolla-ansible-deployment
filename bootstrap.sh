@@ -53,4 +53,4 @@ kolla-genpwd
 
 echo ">>> [12/12] Writing /etc/kolla/globals.yml..."
 cp $HOME/kolla-ansible-deployment/globals.yml /etc/kolla/globals.yml
-sed -i 's/\(keystone_auth_admin_password:\s*\).*/\1${password}/' /etc/kolla/global.yml
+sed -i 's/\(keystone_auth_admin_password:\s*\).*/\1${password}/' /etc/kolla/passwords.yml
