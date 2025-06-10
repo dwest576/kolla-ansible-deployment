@@ -12,7 +12,7 @@ config_strategy: COPY_ALWAYS
 
 enable_glance: "{{ enable_openstack_core | bool }}"
 glance_backend_file: "yes"
-glance_file_datadir_volume: "/images/"
+glance_file_datadir_volume: "/glance/"
 enable_glance_image_cache: "yes"
 
 
