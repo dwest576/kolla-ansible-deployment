@@ -117,7 +117,7 @@ class TrueNASCommon(object):
         params = {}
         params['target'] = target_id
         params['extent'] = extent_id
-        # params['iscsi_lunid'] = 0   # no longer needed with API v2.0
+        params['iscsi_lunid'] = 0   # no longer needed with API v2.0
         jparams = json.dumps(params)
         jparams = jparams.encode('utf8')
 
