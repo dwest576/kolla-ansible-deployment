@@ -11,6 +11,11 @@ enable_openstack_core: "yes"
 config_strategy: COPY_ALWAYS
 
 enable_glance: "{{ enable_openstack_core | bool }}"
+glance_backend_file: "yes"
+glance_file_datadir_volume: "/images/"
+enable_glance_image_cache: "yes"
+
+
 enable_hacluster: "no"
 enable_haproxy: "yes"
 enable_keepalived: "{{ enable_haproxy | bool }}"
